@@ -18,3 +18,8 @@
 .logoName {
   margin-top: 0;
 }
+.categorysContainer {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}

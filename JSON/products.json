@@ -1,6 +1,6 @@
 [{
     "id": 1,
-    "category": "Lamparas",
+    "category": "lamparas",
     "title": "Lampara Gato",
     "price": 2798,
     "image": "../src/assets/products/lamparaGato.jpeg",
@@ -9,7 +9,7 @@
 },
 {
     "id": 2,
-    "category": "Lamparas",
+    "category": "lamparas",
     "title": "Lampara astronauta sentado",
     "price": 3498,
     "image": "../src/assets/products/lampara astronauta.jpeg",
@@ -18,7 +18,7 @@
 },
 {
     "id": 3,
-    "category": "Lamparas",
+    "category": "lamparas",
     "title": "Lampara astronauta",
     "price": 3998,
     "image": "../src/assets/products/lampara astronauta2.jpeg",
@@ -27,7 +27,7 @@
 },
 {
     "id": 4,
-    "category": "Lamparas",
+    "category": "lamparas",
     "title": "Lampara astronauta en la luna",
     "price": 5298,
     "image": "../src/assets/products/lamparaLuna.jpeg",
@@ -36,7 +36,7 @@
 },
 {
     "id": 5,
-    "category": "Botellas",
+    "category": "botellas",
     "title": "Botella Paw Patrol",
     "price": 3998,
     "image": "../src/assets/products/botPawpa.jpeg",
@@ -45,7 +45,7 @@
 },
 {
     "id": 6,
-    "category": "Botellas",
+    "category": "botellas",
     "title": "Botella Unicornio",
     "price": 3198,
     "image": "../src/assets/products/bot uni.jpeg",
@@ -54,7 +54,7 @@
 },
 {
     "id": 7,
-    "category": "Botellas",
+    "category": "botellas",
     "title": "Botella pico silicona",
     "price": 4898,
     "image": "../src/assets/products/botella.jpeg",
@@ -63,7 +63,7 @@
 },
 {
     "id": 8,
-    "category": "Botellas",
+    "category": "botellas",
     "title": "Vaso Unicornio",
     "price": 5298,
     "image": "../src/assets/products/vaso uni.jpeg",
@@ -72,7 +72,7 @@
 },
 {
     "id": 9,
-    "category": "Bolsos",
+    "category": "mochilas",
     "title": "Mochila Chimola",
     "price": 6198,
     "image": "../src/assets/products/mochilaChimo.jpeg",
@@ -81,7 +81,7 @@
 },
 {
     "id": 10,
-    "category": "Bolsos",
+    "category": "mochilas",
     "title": "Cartera Chimola",
     "price": 4998,
     "image": "../src/assets/products/cartera-producto.jpeg",
@@ -90,7 +90,7 @@
 },
 {
     "id": 11,
-    "category": "Bolsos",
+    "category": "mochilas",
     "title": "Cartera Trendy",
     "price": 6898,
     "image": "../src/assets/products/cartera-trendy.jpeg",
@@ -99,7 +99,7 @@
 },
 {
     "id": 12,
-    "category": "Bolsos",
+    "category": "mochilas",
     "title": "Mochila Chimola",
     "price": 16990,
     "image": "../src/assets/products/mochilaChimola.jpeg",

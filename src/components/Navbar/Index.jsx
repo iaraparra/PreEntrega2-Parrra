@@ -5,34 +5,31 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className={styles.container}>
+    <nav className={styles.container}>
       <div>
         <Link to="/inicio" className={styles.logoContainer}>
           <CiRainbow size={50} />
           <p className={styles.logoName}>Chuchery's</p>
         </Link>
       </div>
-      <nav className={styles.nav}>
-        <Link to="/inicio" className={styles.navItem}>
-          Inicio
+      <div className={styles.categorysContainer}>
+        <Link to="/">
+          <p>Inicio</p>
         </Link>
-        {/* <Link to="/:category" className={styles.navItem}>Nuestro Productos</Link> */}
-        {/* <Link to= {`${product.category}`}>Botellas y Vasos</Link> */}
-        <Link to="/Botellas" className={styles.navItem}>
-          Botellas y Vasos
+        <Link to={"/category/botellas"}>
+          <p>Botellas</p>
         </Link>
-        <Link to="/Lamparas" className={styles.navItem}>
-          Lamparas
+        <Link to="/category/lamparas">
+          <p>Lamparas</p>
         </Link>
-        <Link to="/Carteras" className={styles.navItem}>
-          Carteras
+        <Link to="/category/mochilas">
+          <p>Mochilas</p>
         </Link>
-        <Link to="contacto" className={styles.navItem}>
-          Contacto
-        </Link>
-      </nav>
-      <CartWidget />
-    </div>
+      </div>
+      <Link to="/cart">
+        <CartWidget />
+      </Link>
+    </nav>
   );
 };
 

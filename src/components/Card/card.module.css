@@ -1,25 +1,30 @@
-.cardContainer{
-    width: 300px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    
-    background-color: rgb(238, 227, 237);
-    border-radius: 25px;
+.cardContainer {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: rgb(238, 227, 237);
+  border-radius: 25px;
 }
-.cardTitle{
-    background-color: rgb(238, 227, 237);
+.cardTitle {
+  background-color: rgb(238, 227, 237);
+  font-size: 16pt;
+  font-weight: 700;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
-.cardImage{
-    width: 200px;
-    border-radius: 15px;
+.cardImage {
+  width: 200px;
+  border-radius: 15px;
 }
-.cardDescription{
-    background-color: rgb(238, 227, 237);
-    font-weight: 300;
+.cardDescription {
+  background-color: rgb(238, 227, 237);
+  font-weight: 300;
 }
-.cardPrice{
-    background-color: rgb(238, 227, 237);
-    font-weight: 500;
-    font-size: 14pt;
+.cardPrice {
+  background-color: rgb(238, 227, 237);
+  font-weight: 500;
+  font-size: 14pt;
 }
