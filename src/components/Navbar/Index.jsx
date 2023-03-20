@@ -1,10 +1,9 @@
 import styles from "./navbar.module.css";
-
 import CartWidget from "../CartWidget/CartWidget";
 import { CiRainbow } from "react-icons/ci";
 import { Link } from "react-router-dom";
 
-const Navbar = (product) => {
+const Navbar = () => {
   return (
     <div className={styles.container}>
       <div>
@@ -19,16 +18,16 @@ const Navbar = (product) => {
         </Link>
         {/* <Link to="/:category" className={styles.navItem}>Nuestro Productos</Link> */}
         {/* <Link to= {`${product.category}`}>Botellas y Vasos</Link> */}
-        <Link to="/Botellas" className={styles.navItem}>
+        <Link to="/category/Botellas" className={styles.navItem}>
           Botellas y Vasos
         </Link>
-        <Link to="Lamparas" className={styles.navItem}>
+        <Link to="/category/Lamparas" className={styles.navItem}>
           Lamparas
         </Link>
-        <Link to="Carteras" className={styles.navItem}>
+        <Link to="/category/Carteras" className={styles.navItem}>
           Carteras
         </Link>
-        <Link to="carrito" className={styles.navItem}>
+        <Link to="contacto" className={styles.navItem}>
           Contacto
         </Link>
       </nav>

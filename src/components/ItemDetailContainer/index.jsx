@@ -1,9 +1,19 @@
 import styles from "./itemDetail.module.css";
 import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 
-const ItemDetailContainer = ({ products }) => {
+const ItemDetailContainer = () => {
+
+  const [products, setProducts] = useState([]);
+  
+  useEffect(() => {
+    fetch("../JSON/productos.json")
+    .then((res) => res.json())
+    .then((data) => setProducts(data));
+  }, []);
+  
   const { id } = useParams();
-  const product = products.find((product) => product.id == id);
+  const product = products.find((product) => product.id === parseInt(id));
   
   return (
     <div className={styles.container}>
