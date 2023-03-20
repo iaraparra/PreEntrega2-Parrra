@@ -1,20 +1,20 @@
-/* import "./App.css";
+import "./App.css";
 import { useEffect, useState } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import Navbar from "./components/Navbar/Index";
 
-function App() { */
-/*   const [products, setProducts] = useState([]);
+function App() {
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
     fetch("../JSON/productos.json")
       .then((res) => res.json())
       .then((data) => setProducts(data));
-  }, []); */
+  }, []);
 
-/*   return (
+  return (
     <div>
       <Navbar />
 
@@ -22,25 +22,24 @@ function App() { */
         <Route path="/" element={<Navigate to="inicio" />} />
         <Route
           path="/inicio"
-          element={<ItemListContainer />}
-        />
-        <Route
-          path="/:category"
           element={<ItemListContainer products={products} />}
         />
         <Route
-          path="/category/:id"
-          element={<ItemDetailContainer />}
+          path="/products/:category/:id"
+          element={<ItemListContainer products={products} />}
+        />
+        <Route
+          path="/inicio/:id"
+          element={<ItemDetailContainer products={products} />}
         />
       </Routes>
     </div>
   );
-} */
+}
 
-/* export default App; */
+export default App;
 
-
-import "./App.css";
+/* import "./App.css";
 import { useEffect, useState } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import ItemDetailContainer from "./components/ItemDetailContainer";
@@ -70,4 +69,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; */

@@ -18,13 +18,13 @@ const Navbar = () => {
         </Link>
         {/* <Link to="/:category" className={styles.navItem}>Nuestro Productos</Link> */}
         {/* <Link to= {`${product.category}`}>Botellas y Vasos</Link> */}
-        <Link to="/category/Botellas" className={styles.navItem}>
+        <Link to="/Botellas" className={styles.navItem}>
           Botellas y Vasos
         </Link>
-        <Link to="/category/Lamparas" className={styles.navItem}>
+        <Link to="/Lamparas" className={styles.navItem}>
           Lamparas
         </Link>
-        <Link to="/category/Carteras" className={styles.navItem}>
+        <Link to="/Carteras" className={styles.navItem}>
           Carteras
         </Link>
         <Link to="contacto" className={styles.navItem}>
