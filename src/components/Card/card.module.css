@@ -1,0 +1,25 @@
+.cardContainer{
+    width: 300px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: rgb(238, 227, 237);
+    border-radius: 25px;
+}
+.cardTitle{
+    background-color: rgb(238, 227, 237);
+}
+.cardImage{
+    width: 200px;
+    border-radius: 15px;
+}
+.cardDescription{
+    background-color: rgb(238, 227, 237);
+    font-weight: 300;
+}
+.cardPrice{
+    background-color: rgb(238, 227, 237);
+    font-weight: 500;
+    font-size: 14pt;
+}
