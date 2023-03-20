@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className={styles.container}>
       <div>
-        <Link to="/inicio" className={styles.logoContainer}>
+        <Link to="/" className={styles.logoContainer}>
           <CiRainbow size={50} />
           <p className={styles.logoName}>Chuchery's</p>
         </Link>
