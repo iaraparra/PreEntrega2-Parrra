@@ -1,24 +1,36 @@
+import { collection, getDocs } from "firebase/firestore";
 import styles from "./ItemDetail.module.css";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import db from "../../../db/firebase-config";
+// import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
-  const [product, setProduct] = useState({});
-  const { id } = useParams();
+  const [items, setItems] = useState({});
+  const itemsRef = collection(db, "items");
+
+  const getItems = async () => {
+    const itemsCollection = await getDocs(itemsRef);
+    const items = itemsCollection.docs.map((doc) => ({
+      ...doc.data(),
+      id: doc.id,
+    }));
+    setItems(items);
+  };
+
   useEffect(() => {
-    fetch("../JSON/products.json")
-      .then((res) => res.json())
-      .then((data) =>
-        setProduct(data.find((item) => item.id === parseInt(id)))
-      );
-  }, [id]);
+    getItems();
+  }, []);
 
   return (
     <div className={styles.container}>
-      <h1>{product.title}</h1>
-      <img src={product.image} alt={product.title} width="400px" />
-      <h3>$ {product.price}</h3>
-      <p>{product.description}</p>
+      {items.map((item) => (
+        <div key={item.id}>
+          <h1>{item.title}</h1>
+          <img src={item.image} alt={item.title} width="400px" />
+          <h3>$ {item.price}</h3>
+          <p>{item.description}</p>
+        </div>
+      ))}
     </div>
   );
 };

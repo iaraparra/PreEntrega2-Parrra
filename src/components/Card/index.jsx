@@ -1,21 +1,20 @@
 import styles from "./card.module.css";
 import { Link } from "react-router-dom";
 
-const Card = ({ product }) => {
+const Card = ({ item }) => {
   return (
-    <Link to={`/item/${product.id}`}>
+    <Link to={`/item/${item.id}`}>
       <div className={styles.cardContainer}>
-        <h1 className={styles.cardTitle}>{product.title}</h1>
-        <img
-          src={product.image}
-          alt={product.title}
-          className={styles.cardImage}
-        />
-        <p className={styles.cardDescription}>{product.description}</p>
-        <p className={styles.cardPrice}>$ {product.price}</p>
+        <h1 className={styles.cardTitle}>{item.title}</h1>
+        <img src={item.image} alt={item.title} className={styles.cardImage} />
+        <p className={styles.cardPrice}>$ {item.price}</p>
       </div>
     </Link>
   );
 };
+
+{
+  /* <p className={styles.cardDescription}>{item.description}</p> */
+}
 
 export default Card;

@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   background-color: rgb(238, 227, 237);
   border-radius: 25px;
 }
@@ -19,10 +18,10 @@
   width: 200px;
   border-radius: 15px;
 }
-.cardDescription {
+/* .cardDescription {
   background-color: rgb(238, 227, 237);
   font-weight: 300;
-}
+} */
 .cardPrice {
   background-color: rgb(238, 227, 237);
   font-weight: 500;
