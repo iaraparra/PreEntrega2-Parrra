@@ -2,7 +2,7 @@ import styles from "./ItemList.module.css";
 import Card from "../Card";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { collection, doc, getDocs, query } from "firebase/firestore";
+import { collection, doc, getDocs, query, where } from "firebase/firestore";
 import db from "../../../db/firebase-config";
 
 const ItemListContainer = () => {

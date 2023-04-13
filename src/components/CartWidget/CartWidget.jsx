@@ -1,11 +1,13 @@
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import styles from "./cartWidget.module.css";
+import { useCartContext } from '../../context/CartContext';
 
 const CartWidget = () => {
+  const {totalProducts} = useCartContext();
   return (
     <div className={styles.cart}>
       <AiOutlineShoppingCart size={30} />
-      <p className={styles.cartItem}>3</p>
+      <span>{totalProducts() || ' '}</span>
     </div>
   );
 };

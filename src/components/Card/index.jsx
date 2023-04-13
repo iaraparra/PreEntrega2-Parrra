@@ -13,8 +13,4 @@ const Card = ({ item }) => {
   );
 };
 
-{
-  /* <p className={styles.cardDescription}>{item.description}</p> */
-}
-
 export default Card;
