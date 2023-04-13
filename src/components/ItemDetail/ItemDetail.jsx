@@ -14,7 +14,8 @@ const ItemDetail = () => {
     const docRef = doc(db, "items", id);
     const docSnap = await getDoc(docRef);
     if (docSnap.exists()) {
-      setItem(docSnap.data());
+      const newItem = { id: docSnap.id, ...docSnap.data() };
+      setItem(newItem);
     } else {
       console.log("Producto Inexistente");
     }
@@ -25,11 +26,11 @@ const ItemDetail = () => {
   }, [id]);
 
   const [goToCart, setGoToCart] = useState(false);
-  const {addProduct} = useCartContext();
+  const { addProduct } = useCartContext();
 
   const onAdd = (quantity) => {
     setGoToCart(true);
-    addProduct(item, quantity)
+    addProduct(item, quantity);
   };
 
   return (
@@ -39,7 +40,7 @@ const ItemDetail = () => {
       <h3>$ {item.price}</h3>
       <p>{item.description}</p>
       {goToCart ? (
-        <Link to="/cart"> Terminar Compra</Link>
+        <Link to="/cart" className={styles.buttonTerminarCompra}>{" "} Terminar Compra </Link>
       ) : (
         <ItemCount initial={1} onAdd={onAdd} />
       )}

@@ -1,8 +1,4 @@
-import { useContext, useEffect, useState } from "react";
-import { CartContext } from "../../context/CartContext";
-import { AiOutlineLine } from "react-icons/ai";
-import { IoMdAdd } from "react-icons/io";
-import { BsFillCartPlusFill } from "react-icons/bs";
+import { useEffect, useState } from "react";
 import styles from "./ItemCount.module.css";
 
 export const ItemCount = ({ initial, onAdd }) => {
@@ -23,11 +19,11 @@ export const ItemCount = ({ initial, onAdd }) => {
   return (
     <div className={styles.container}>
       <div className={styles.buttons}>
-        <button disabled={count <= 1} onClick={decrease}> - </button>
-        <p>{count}</p>
-        <button onClick={increase}> + </button>
+        <button disabled={count <= 1} onClick={decrease} className={styles.buttonDecrease}>-</button>
+        <p className={styles.quantity}>{count}</p>
+        <button onClick={increase} className={styles.buttonIncrease}>+</button>
       </div>
-      <button onClick={() => onAdd(count)}> Agregar al carrito </button>
+      <button onClick={() => onAdd(count)} className={styles.buttonAdd}> Agregar al carrito</button>
     </div>
   );
 };

@@ -1,6 +1,18 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buttonTerminarCompra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(93, 64, 97);
+  border-radius: 5px;
+  height: 60px;
+  width: 135px;
+  color: rgb(245, 220, 244);
+  font-size: 16px;
+  border: none;
 }

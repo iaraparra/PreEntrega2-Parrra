@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.containeCompra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buttonComprar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: 100px;
+  width: 130px;
+  background-color: rgb(245, 220, 244);
+  border: none;
+}
+.totalCart {
+  font-weight: 600;
+  font-size: 20pt;
+}
+.buttonFinalCompra {
+  background-color: rgb(93, 64, 97);
+  border-radius: 5px;
+  height: 60px;
+  width: 135px;
+  color: rgb(245, 220, 244);
+  font-size: 16px;
+  border: none;
+}
+.ContainerFinalCart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
