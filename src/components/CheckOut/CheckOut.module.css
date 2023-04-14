@@ -38,3 +38,15 @@
 .textButtonCompra {
   background-color: rgb(245, 220, 244);
 }
+.containerFinalizarCompra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.containerForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,14 +1,11 @@
-//import Spinner from 'react-bootstrap/Spinner';
-import { FiLoader } from 'react-icons/fi';
+import { FiLoader } from "react-icons/fi";
+import styles from "./Spinner.module.css";
 
 function Spinner() {
   return (
-    <>
-    {/* <Spinner animation="border" role="status">
-      <span className="visually-hidden">Loading...</span>
-    </Spinner> */}
-    <FiLoader size={30} />
-    </>
+    <div className={styles.container}>
+      <FiLoader size={30} />
+    </div>
   );
 }
 

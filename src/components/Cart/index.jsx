@@ -10,22 +10,6 @@ import Checkout from "../CheckOut";
 const Cart = () => {
   const { cart, totalPrice } = useCartContext();
 
-/*   const order = {
-    buyer: {
-      name: client.name,
-      lastName: client.lastName,
-      phone: client.phone,
-      email: client.email,
-    },
-    items: cart.map((item) => ({
-      id: item.id,
-      title: item.title,
-      price: item.price,
-      quantity: item.quantity,
-    })),
-    total: totalPrice(),
-  }; */
-
   const handleClick = () => {
     const db = getFirestore();
     const ordersCollection = collection(db, 'orders');
@@ -51,9 +35,7 @@ const Cart = () => {
       ))}
       <div className={styles.ContainerFinalCart}>
         <p className={styles.totalCart}>Total $ {totalPrice()}</p>
-
-        <Link to="/checkout"> compra</Link>
-       
+        <Link to="/checkout" className={styles.button}>Generar compra</Link>
       </div>
     </div>
   );

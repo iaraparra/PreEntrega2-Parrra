@@ -5,10 +5,8 @@ import db from "../../../db/firebase-config";
 import { CartContext } from "../../context/CartContext";
 import Spinner from "../Spinner";
 import styles from "./CheckOut.module.css";
-//import Spinner from '../Spinner/Spinner';
 
 const Checkout = () => {
-  // { buyer: { name, phone, email }, items: [{ id, title, price, quantity }], date, total }
 
   const { cart, totalPrice, clearCart } = useContext(CartContext);
 
@@ -66,10 +64,10 @@ const Checkout = () => {
         <Spinner />
       ) : (
         !orderID && (
-          <div>
+          <div className={styles.containerFinalizarCompra}>
             <h4>Completar Datos:</h4>
             <br />
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className={styles.containerForm}>
               <input
                 type="text"
                 name="Name"
