@@ -3,13 +3,14 @@ import { useCartContext } from "../../context/CartContext";
 import { Link } from "react-router-dom";
 import ItemCart from "../ItemCart";
 import styles from "./Cart.module.css";
-import CheckOutForm from "../CheckOutForm";
+import CheckOutForm from "../CheckOut";
 import { addDoc, collection, getFirestore } from "firebase/firestore";
+import Checkout from "../CheckOut";
 
 const Cart = () => {
   const { cart, totalPrice } = useCartContext();
 
-  const order = {
+/*   const order = {
     buyer: {
       name: client.name,
       lastName: client.lastName,
@@ -23,7 +24,7 @@ const Cart = () => {
       quantity: item.quantity,
     })),
     total: totalPrice(),
-  };
+  }; */
 
   const handleClick = () => {
     const db = getFirestore();
@@ -37,7 +38,7 @@ const Cart = () => {
       <div className={styles.container}>
         <h1>Su carrito esta vacio</h1>
         <Link to="/" className={styles.buttonComprar}>
-          Conprar
+          Comprar
         </Link>
       </div>
     );
@@ -50,8 +51,9 @@ const Cart = () => {
       ))}
       <div className={styles.ContainerFinalCart}>
         <p className={styles.totalCart}>Total $ {totalPrice()}</p>
-        <CheckOutForm />
-        <button onClick={handleClick} className={styles.buttonFinalCompra}>Finalizar Compra</button>
+
+        <Link to="/checkout"> compra</Link>
+       
       </div>
     </div>
   );

@@ -24,16 +24,7 @@
   font-weight: 600;
   font-size: 20pt;
 }
-.buttonFinalCompra {
-  background-color: rgb(93, 64, 97);
-  border-radius: 5px;
-  height: 60px;
-  width: 135px;
-  color: rgb(245, 220, 244);
-  font-size: 16px;
-  border: none;
-  margin-top: 35px;
-}
+
 .ContainerFinalCart {
   display: flex;
   flex-direction: column;

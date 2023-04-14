@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  margin-top: 10px;
+  height: 30px;
+  width: 300px;
+  border-radius: 10px;
+  border-color: rgb(96, 66, 104);
+}
+.buttonFinalCompra {
+  background-color: rgb(93, 64, 97);
+  border-radius: 5px;
+  height: 60px;
+  width: 135px;
+  color: rgb(245, 220, 244);
+  font-size: 16px;
+  border: none;
+  margin-top: 35px;
+}
+.idContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buttonCompra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: 100px;
+  width: 130px;
+  background-color: rgb(245, 220, 244);
+  border: none;
+}
+.textButtonCompra {
+  background-color: rgb(245, 220, 244);
+}
