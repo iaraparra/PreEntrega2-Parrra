@@ -37,7 +37,7 @@ Or you can download the .zip archive
 **This proyect contains the following branches:**
 
 <ul>
-    <li>martes</li>
+    <li>master</li>
     <li>inicioEntregaFinal</li>
     <li>entregaFinal</li>
 </ul>
